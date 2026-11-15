@@ -1,0 +1,63 @@
+erDiagram
+    READER {
+        int reader_id
+        string full_name
+        string email
+        string phone_number
+        date registration_date
+    }
+
+    AUTHOR {
+        int author_id
+        string full_name
+    }
+
+    CATEGORY {
+        int category_id
+        string name
+        string descriptionkkv
+    }
+
+    BOOK {
+        int book_id
+        string title
+        string ISBN
+        int publication_year
+    }
+
+    BOOK_COPY {
+        int copy_id
+        string inventory_number
+        string copy_status
+        string location
+    }
+
+    RESERVATION {
+        int reservation_id
+        date reservation_date
+        date expiration_date
+        string status
+    }
+
+    LOAN {
+        int loan_id
+        date issue_date
+        date due_date
+        date return_date
+        string status
+    }
+
+    LIBRARIAN {
+        int librarian_id
+        string full_name
+        string email
+    }
+
+    AUTHOR ||--o{ BOOK : writes
+    CATEGORY ||--o{ BOOK : contains
+    BOOK ||--o{ BOOK_COPY : has
+    READER ||--o{ RESERVATION : creates
+    BOOK_COPY ||--o{ RESERVATION : reserved_for
+    READER ||--o{ LOAN : receives
+    BOOK_COPY ||--o{ LOAN : borrowed_in
+    LIBRARIAN ||--o{ LOAN : processes
