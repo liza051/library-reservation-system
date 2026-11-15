@@ -53,3 +53,17 @@ The project decisions were checked against the system requirements. The final de
 AI was used as an assistant for requirements analysis, ER model review, and documentation.
 
 The final modeling decisions were reviewed and approved by the project author.
+
+## 5. AI Documentation Files
+
+The reconstructed prompts, summarized AI responses, and personal feedback are stored separately:
+
+- `ai/prompts/01-specification-review.md`
+- `ai/prompts/02-er-model-review.md`
+- `ai/responses/01-specification-review-response.md`
+- `ai/responses/02-er-model-review-response.md`
+- `ai/feedback.md`
+
+The prompts and responses are reconstructed summaries of the project work, not verbatim conversation transcripts.
+
+The feedback document records which AI recommendations were accepted and explains the final modeling decisions.

@@ -60,3 +60,19 @@ The specification was updated to allow zero or many BookCopies for one Book. The
 The identified inconsistencies were reviewed and corrected by clarifying the specification and aligning the ER model with the updated requirements.
 
 Further verification of normalization and business rules is required.
+
+## 5. AI Review Traceability
+
+The audit findings are documented together with the AI-assisted analysis:
+
+| Finding | AI documentation | Final correction |
+
+| Reader phone attribute naming | `ai/prompts/01-specification-review.md` and `ai/responses/01-specification-review-response.md` | Standardized as `phone_number` |
+| BookCopy status attribute naming | `ai/prompts/02-er-model-review.md` and `ai/responses/02-er-model-review-response.md` | Standardized as `copy_status` |
+| Book–BookCopy cardinality | `ai/prompts/02-er-model-review.md` and `ai/responses/02-er-model-review-response.md` | Updated the specification to allow zero or many copies |
+
+The corresponding decisions and personal evaluation are recorded in `ai/feedback.md`.
+
+The AI prompts and responses are reconstructed summaries, not verbatim transcripts.
+
+The final corrections were reviewed and applied by the project author.

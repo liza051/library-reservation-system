@@ -1,19 +1,28 @@
-
 # ADR 001: One Author per Book
 
 ## Status
 
 Accepted
 
-## Context
+## Context and Problem Statement
 
-The Library Reservation System requires a relationship between books and authors.
+The Library Reservation System requires a relationship between books and authors. A modeling decision is needed to define whether a book can have one author or multiple authors.
 
-During the conceptual data modeling process, it was necessary to decide whether one book could have multiple authors or exactly one author.
+## Decision Drivers
 
-## Decision
+- Consistency with the project specification.
+- Simplicity of the conceptual ER model.
+- Clear relationship cardinalities.
+- Compliance with the selected project scope.
 
-Each Book is associated with exactly one Author.
+## Considered Options
+
+1. Each Book has exactly one Author.
+2. A Book can have multiple Authors.
+
+## Decision Outcome
+
+Chosen option: **Each Book has exactly one Author.**
 
 One Author can be associated with zero or many Books.
 
@@ -21,18 +30,13 @@ The ER relationship is:
 
 `AUTHOR ||--o{ BOOK : writes`
 
-## Alternatives Considered
-
-1. One Book has exactly one Author.
-2. One Book can have multiple Authors.
-
 ## Consequences
 
-- The conceptual model remains simple.
-- Every Book must have one Author.
-- One Author can write multiple Books.
-- A many-to-many relationship between Book and Author is not required.
+- Every Book must be associated with exactly one Author.
+- One Author can be associated with multiple Books.
+- A many-to-many relationship is not required.
+- The model remains consistent with the selected specification.
 
-## Rationale
+## Confirmation
 
-The first option was selected to follow the project specification and keep the model consistent with the chosen business requirements.
+The decision is reflected in `spec.md` and `model/er-model.mmd` and is documented in the project defense.
