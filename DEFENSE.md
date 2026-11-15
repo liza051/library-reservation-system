@@ -44,6 +44,8 @@ The conceptual model contains eight entities:
 
 The ER model is described using Mermaid ER Diagram syntax in `model/er-model.mmd`.
 
+![Library Reservation System ER Diagram](model/er-model.svg)
+
 The model must be checked against `spec.md` to ensure that all entities, attributes, relationships, and cardinalities are consistent.
 
 ## 6. Project Documentation
