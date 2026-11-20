@@ -59,3 +59,8 @@ AI was used to review the specification and ER model, identify inconsistencies, 
 ## 7. Scope
 
 The project focuses on conceptual data modeling and requirements analysis. It excludes physical database implementation, SQL scripts, and application development.
+
+## 8. Submission
+
+- GitHub Repository: https://github.com/liza051/library-reservation-system
+- GitHub Pull Request: https://github.com/liza051/library-reservation-system/pull/1
