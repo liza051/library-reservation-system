@@ -1,58 +1,68 @@
-
 # AI Work Log — Library Reservation System
 
-## 1. Purpose of AI Usage
+## 1. Purpose of AI Assistance
 
-AI was used to review the requirements and conceptual ER model of the Library Reservation System, identify inconsistencies, and suggest possible corrections.
+AI was used as a supporting tool during the development of the Library Reservation System conceptual ER model.
 
-## 2. AI-Assisted Work
+Its role was to assist with requirements analysis, identify possible gaps and inconsistencies, ask clarifying questions, and suggest alternative solutions.
+
+## 2. AI-Assisted Analysis
 
 ### Task 1: Specification Review
 
 **User input:**
-The project specification describing readers, authors, categories, books, physical copies, reservations, loans, and librarians was provided for review.
+
+The project specification describing readers, authors, categories, books, physical copies, reservations, loans, and librarians was provided for analysis.
 
 **AI contribution:**
-AI reviewed the entities, attributes, relationships, and business rules and suggested clarifications.
 
-**My decision:**
-I kept the original eight entities and the rule that each Book has exactly one Author.
+AI helped review the entities, attributes, relationships, and business rules. It identified potentially unclear requirements and suggested possible clarifications.
+
+**My decisions:**
+
+I reviewed the suggestions and retained the original eight entities and the rule that each Book has exactly one Author.
 
 ### Task 2: ER Model Review
 
 **User input:**
-The Mermaid ER model was provided for comparison with the specification.
+
+The Mermaid ER model was compared with the project specification.
 
 **AI contribution:**
-AI identified differences in attribute names and the Book–BookCopy cardinality.
 
-**My decision:**
-I standardized the attribute names as `phone_number` and `copy_status`.
+AI helped identify differences in attribute names and the Book–BookCopy cardinality and suggested possible ways to resolve them.
+
+**My decisions:**
+
+I reviewed the identified differences and standardized the attribute names as `phone_number` and `copy_status`.
 
 I also clarified that a Book can exist in the catalog without physical copies.
 
 ### Task 3: Audit Preparation
 
 **User input:**
-The updated specification and ER model were reviewed for consistency.
+
+The updated specification and ER model were checked for consistency.
 
 **AI contribution:**
-AI helped organize the identified discrepancies and document their corrections.
 
-**My decision:**
-I reviewed the proposed changes and included the corrections in the project documentation.
+AI helped identify possible discrepancies between the specification and the model, asked clarifying questions, and suggested ways to document the corrections.
 
-## 3. AI Output Review
+**My decisions:**
 
-The AI suggestions were not accepted automatically.
+I evaluated the suggestions and selected the corrections that matched the project requirements. I included the final decisions in the project documentation.
 
-The project decisions were checked against the system requirements. The final decisions about the number of authors per book and the existence of books without physical copies were retained in the specification.
+## 3. Review of AI Suggestions
+
+AI suggestions were treated as recommendations and were not accepted automatically.
+
+The project requirements and modeling decisions were reviewed by the student. The final decisions about the number of authors per book and the possibility of books existing without physical copies were made by the student and reflected in the specification.
 
 ## 4. Conclusion
 
-AI was used as an assistant for requirements analysis, ER model review, and documentation.
+AI was used as an analytical assistant for requirements review, identification of gaps, clarification of relationships, and consistency checking.
 
-The final modeling decisions were reviewed and approved by the project author.
+The student independently evaluated the suggestions and made the final modeling decisions. Responsibility for the completed ER model and its documentation remains with the student.
 
 ## 5. AI Documentation Files
 
